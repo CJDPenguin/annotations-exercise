@@ -4,7 +4,7 @@
 import java.util.ArrayList;
 import java.util.List;
 public class Author extends Person {
-    @SuppressWarnings("all")
+
     private List books;
 
     public Author(String firstName, String lastName) {
@@ -16,7 +16,6 @@ public class Author extends Person {
      * @deprecated Use publishedBooks instead
      */
     @Deprecated
-    @SuppressWarnings("all")
     public List<String> getBooks() {
         return books;
     }
@@ -25,7 +24,6 @@ public class Author extends Person {
         return books;
     }
 
-    @SuppressWarnings("all")
     public void addBook(String book) {
         books.add(book);
     }
